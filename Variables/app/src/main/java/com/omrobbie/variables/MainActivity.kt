@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         var3()
         var4()
         var5()
+        var6()
     }
 
     fun var1() {
@@ -72,5 +73,20 @@ class MainActivity : AppCompatActivity() {
         var dob: Int? = readLine()!!.toInt()
 
         print("Name: $name, Age: $age, DateOfBirth: $dob")
+    }
+
+    fun var6() {
+        var num1: Int = 10
+        var name: String = "Kotlin"
+        var f: Float = 2.34f
+        var name2: String = "10"
+
+        var res1 = f.toInt()
+        var res2 = num1.toFloat()
+        var res3 = name2.toInt()
+
+        println("Float to Int: $res1")
+        println ("Int to Float: $res2")
+        println("String to Int: $res3")
     }
 }
