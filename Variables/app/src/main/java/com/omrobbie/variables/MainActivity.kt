@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         var2()
         var3()
         var4()
+        var5()
     }
 
     fun var1() {
@@ -60,5 +61,16 @@ class MainActivity : AppCompatActivity() {
 
         println(num1)
         println(name)
+    }
+
+    fun var5() {
+        println("Enter the name")
+        var name: String? = readLine().toString()
+        println("Enter age")
+        var age: Int? = readLine()!!.toInt()
+        println("Enter date of birth")
+        var dob: Int? = readLine()!!.toInt()
+
+        print("Name: $name, Age: $age, DateOfBirth: $dob")
     }
 }
