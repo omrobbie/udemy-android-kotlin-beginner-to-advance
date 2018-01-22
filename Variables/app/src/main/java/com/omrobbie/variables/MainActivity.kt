@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         var11()
         var12()
         var13()
+        var14()
     }
 
     fun var1() {
@@ -191,11 +192,30 @@ class MainActivity : AppCompatActivity() {
                 println("You are child")
             }
 
-            if (age >=13 && age <=19) {
+            if (age >= 13 && age <= 19) {
                 println("You are teenager")
             }
         } else {
             println("You are old")
+        }
+    }
+
+    fun var14() {
+        var grade: Int = 90
+        println("Your current point: $grade")
+
+        if (grade >= 90) {
+            println("Your grade is A+")
+        } else if (grade >= 80 && grade <= 90) {
+            println("Your grade is A")
+        } else if (grade >= 70 && grade <= 80) {
+            println("Your grade is B")
+        } else if (grade >= 60 && grade <= 70) {
+            println("Your grade is C")
+        } else if (grade < 50) {
+            println("Your grade is D")
+        } else {
+            println("Wrong current point")
         }
     }
 }
