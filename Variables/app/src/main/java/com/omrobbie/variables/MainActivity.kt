@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         var6()
         var7()
         var8()
+        var9()
     }
 
     fun var1() {
@@ -121,5 +122,17 @@ class MainActivity : AppCompatActivity() {
 
         var res2 = name3.length <= name4.length
         println(res2)
+    }
+
+    fun var9() {
+        var res1 = 7 < 6 && 8 > 10 && 3 > 2
+        var res2 = 7 > 6 && 5 < 3 && 2 > 10
+        println(res1)
+        println(res2)
+
+        var res3 = 5 > 6 || 7 > 3 || 2 > 10
+        var res4 = 5 > 10 || 5 > 12 || 5 < 3
+        println(res3)
+        println(res4)
     }
 }
