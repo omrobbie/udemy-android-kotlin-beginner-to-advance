@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         var17()
         var18()
         var19()
+        var20()
     }
 
     fun var1() {
@@ -303,6 +304,15 @@ class MainActivity : AppCompatActivity() {
             for (j in 1..5) {
                 println("Hello World!")
             }
+        }
+    }
+
+    fun var20() {
+        for (i in 1..5) {
+            for (j in 1..i) {
+                print("*")
+            }
+            println()
         }
     }
 }
