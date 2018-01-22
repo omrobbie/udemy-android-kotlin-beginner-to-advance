@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         var13()
         var14()
         var15()
+        var16()
     }
 
     fun var1() {
@@ -246,6 +247,34 @@ class MainActivity : AppCompatActivity() {
             }
             else -> {
                 println("You entered a consonant " + ch)
+            }
+        }
+    }
+
+    fun var16() {
+        var num1: Int = 1
+        var num2: Int = 2
+        println("num1: $num1, num2: $num2")
+
+        var request: Int
+        request = 1
+        println("Command request is $request")
+
+        when (request) {
+            1 -> {
+                println("Addition " + (num1 + num2))
+            }
+            2 -> {
+                println("Substraction " + (num1 - num2))
+            }
+            3 -> {
+                println("Multiplication " + (num1 * num2))
+            }
+            4 -> {
+                println("Division " + (num1 / num2))
+            }
+            else -> {
+                println("Wrong option request")
             }
         }
     }
