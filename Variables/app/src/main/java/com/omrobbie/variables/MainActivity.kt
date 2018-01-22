@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         var12()
         var13()
         var14()
+        var15()
     }
 
     fun var1() {
@@ -216,6 +217,36 @@ class MainActivity : AppCompatActivity() {
             println("Your grade is D")
         } else {
             println("Wrong current point")
+        }
+    }
+
+    fun var15() {
+        var ch: Char
+
+        print("Enter char: ")
+        //ch = readLine()!!.get(0)
+        ch = 'a'
+        println(ch)
+
+        when (ch) {
+            'a' -> {
+                println("You entered a vowel " + ch)
+            }
+            'i' -> {
+                println("You entered a vowel " + ch)
+            }
+            'u' -> {
+                println("You entered a vowel " + ch)
+            }
+            'e' -> {
+                println("You entered a vowel " + ch)
+            }
+            'o' -> {
+                println("You entered a vowel " + ch)
+            }
+            else -> {
+                println("You entered a consonant " + ch)
+            }
         }
     }
 }
