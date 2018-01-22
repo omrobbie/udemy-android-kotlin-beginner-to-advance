@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         var7()
         var8()
         var9()
+        var10()
     }
 
     fun var1() {
@@ -134,5 +135,16 @@ class MainActivity : AppCompatActivity() {
         var res4 = 5 > 10 || 5 > 12 || 5 < 3
         println(res3)
         println(res4)
+    }
+
+    fun var10() {
+        var res1 = 10 % 4
+        println("Reminder is $res1")
+
+        var res2 = 12.34 % 3.45
+        println("Reminder is $res2")
+
+        var res3 = 12 % 23
+        println("Reminder is $res3")
     }
 }
