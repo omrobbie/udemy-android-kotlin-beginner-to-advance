@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         var15()
         var16()
         var17()
+        var18()
     }
 
     fun var1() {
@@ -284,5 +285,15 @@ class MainActivity : AppCompatActivity() {
         for (i in 1..10) {
             println("Hello World!")
         }
+    }
+
+    fun var18() {
+        var num: Int = 5
+        var fact: Int = 1
+
+        for (i in 1..num) {
+            fact = fact * i
+        }
+        println("Factorial: $fact")
     }
 }
