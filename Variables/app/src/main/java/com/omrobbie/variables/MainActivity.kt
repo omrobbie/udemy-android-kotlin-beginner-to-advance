@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         var9()
         var10()
         var11()
+        var12()
     }
 
     fun var1() {
@@ -159,5 +160,20 @@ class MainActivity : AppCompatActivity() {
         println("Divider $div")
         println("Substraction $sub")
         println("Addition $add")
+    }
+
+    fun var12() {
+        var age: Int
+
+        print("Enter the age: ")
+        //age = readLine()!!.toInt()
+        age = 12
+        println(age)
+
+        if (age >= 45) {
+            println("You are old")
+        } else {
+            println("You are young")
+        }
     }
 }
