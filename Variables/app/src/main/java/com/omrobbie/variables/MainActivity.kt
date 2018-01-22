@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         var14()
         var15()
         var16()
+        var17()
     }
 
     fun var1() {
@@ -276,6 +277,12 @@ class MainActivity : AppCompatActivity() {
             else -> {
                 println("Wrong option request")
             }
+        }
+    }
+
+    fun var17() {
+        for (i in 1..10) {
+            println("Hello World!")
         }
     }
 }
