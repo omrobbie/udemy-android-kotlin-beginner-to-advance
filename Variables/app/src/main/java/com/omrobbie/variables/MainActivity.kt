@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         var5()
         var6()
         var7()
+        var8()
     }
 
     fun var1() {
@@ -106,5 +107,19 @@ class MainActivity : AppCompatActivity() {
         var res5 = num1 <= num2
 
         println("\n$res2 \n$res3 \n$res4 \n$res5")
+    }
+
+    fun var8() {
+        var name1: String = "Kotlin"
+        var name2: String = "kotlin"
+
+        var res1 = name1 == name2
+        println(res1)
+
+        var name3: String = "abc"
+        var name4: String = "abcd"
+
+        var res2 = name3.length <= name4.length
+        println(res2)
     }
 }
