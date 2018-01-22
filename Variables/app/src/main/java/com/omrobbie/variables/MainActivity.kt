@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         var8()
         var9()
         var10()
+        var11()
     }
 
     fun var1() {
@@ -146,5 +147,17 @@ class MainActivity : AppCompatActivity() {
 
         var res3 = 12 % 23
         println("Reminder is $res3")
+    }
+
+    fun var11() {
+        var mul = 12 * 4
+        var div = 9 / 78
+        var sub = 12 - 23
+        var add = 12 + 23
+
+        println("Multiple $mul")
+        println("Divider $div")
+        println("Substraction $sub")
+        println("Addition $add")
     }
 }
