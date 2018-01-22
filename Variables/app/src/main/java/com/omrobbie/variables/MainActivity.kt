@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         var10()
         var11()
         var12()
+        var13()
     }
 
     fun var1() {
@@ -174,6 +175,27 @@ class MainActivity : AppCompatActivity() {
             println("You are old")
         } else {
             println("You are young")
+        }
+    }
+
+    fun var13() {
+        var age: Int
+
+        print("Enter the age: ")
+        //age = readLine()!!.toInt()
+        age = 14
+        println(age)
+
+        if (age <= 45) {
+            if (age >= 1 && age <= 10) {
+                println("You are child")
+            }
+
+            if (age >=13 && age <=19) {
+                println("You are teenager")
+            }
+        } else {
+            println("You are old")
         }
     }
 }
