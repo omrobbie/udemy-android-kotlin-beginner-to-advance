@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         var4()
         var5()
         var6()
+        var7()
     }
 
     fun var1() {
@@ -66,11 +67,11 @@ class MainActivity : AppCompatActivity() {
 
     fun var5() {
         println("Enter the name")
-        var name: String? = readLine().toString()
+        var name: String? = "Kotlin" //readLine().toString()
         println("Enter age")
-        var age: Int? = readLine()!!.toInt()
+        var age: Int? = 22 //readLine()!!.toInt()
         println("Enter date of birth")
-        var dob: Int? = readLine()!!.toInt()
+        var dob: Int? = 1//readLine()!!.toInt()
 
         print("Name: $name, Age: $age, DateOfBirth: $dob")
     }
@@ -86,7 +87,24 @@ class MainActivity : AppCompatActivity() {
         var res3 = name2.toInt()
 
         println("Float to Int: $res1")
-        println ("Int to Float: $res2")
+        println("Int to Float: $res2")
         println("String to Int: $res3")
+    }
+
+    fun var7() {
+        var num1: Int = 10
+        var num2: Int = 8
+        var name: String = "Kotlin"
+
+        var res1 = num1 == num2
+        println(res1)
+
+        var res2 = num1 > num2
+        var res3 = num1 < num2
+
+        var res4 = num1 >= num2
+        var res5 = num1 <= num2
+
+        println("\n$res2 \n$res3 \n$res4 \n$res5")
     }
 }
