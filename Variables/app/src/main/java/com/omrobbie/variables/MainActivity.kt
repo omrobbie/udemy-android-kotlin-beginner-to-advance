@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         var20()
         var21()
         var22()
+        var23()
     }
 
     fun var1() {
@@ -332,5 +333,14 @@ class MainActivity : AppCompatActivity() {
             println("inside for-loop")
         }
         println("outside for-loop")
+    }
+
+    fun var23() {
+        var counter: Int = 1
+
+        while (counter <= 10) {
+            println("Hello World!")
+            counter++
+        }
     }
 }
