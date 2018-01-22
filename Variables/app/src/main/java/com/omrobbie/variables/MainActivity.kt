@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         var21()
         var22()
         var23()
+        var24()
     }
 
     fun var1() {
@@ -340,6 +341,18 @@ class MainActivity : AppCompatActivity() {
 
         while (counter <= 10) {
             println("Hello World!")
+            counter++
+        }
+    }
+
+    fun var24() {
+        var number: Int = 12
+        println("Number: $number")
+
+        var counter: Int = 1
+
+        while (counter <= 10) {
+            println("$number * $counter = " + (number * counter))
             counter++
         }
     }
