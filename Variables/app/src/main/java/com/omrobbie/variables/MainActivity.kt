@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         var18()
         var19()
         var20()
+        var21()
     }
 
     fun var1() {
@@ -314,5 +315,13 @@ class MainActivity : AppCompatActivity() {
             }
             println()
         }
+    }
+
+    fun var21() {
+        for (i in 1..5) {
+            if (i == 2) break
+            println("inside for-loop")
+        }
+        println("outside for-loop")
     }
 }
