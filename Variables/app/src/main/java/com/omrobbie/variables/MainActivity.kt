@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         var23()
         var24()
         var25()
+        var26()
     }
 
     fun var1() {
@@ -365,5 +366,28 @@ class MainActivity : AppCompatActivity() {
             println("Hello World!")
             counter++
         } while (counter >= 10)
+    }
+
+    fun var26() {
+        var array = Array<Int>(5) { 0 }
+
+//        array[0] = 11
+//        array[1] = 12
+//        array[2] = 13
+//        array[3] = 14
+//        array[4] = 15
+
+        for (i in 0..4) {
+            print("Enter element at $i location: ")
+            //var element = readLine()!!.toInt()
+            var element = i + 10
+            println(element)
+
+            array[i] = element
+        }
+
+        for (items in array) {
+            println("Array element $items")
+        }
     }
 }
