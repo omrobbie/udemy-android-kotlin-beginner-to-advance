@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         var26()
         var27()
         var28()
+        var29()
     }
 
     fun var1() {
@@ -422,5 +423,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         println(arrayList.get(1))
+    }
+
+    fun var29() {
+        var map = HashMap<Int, String>()
+
+        map.put(1, "Kotlin")
+        map.put(2, "Java")
+        map.put(3, "Python")
+        map.put(4, "C#")
+
+        for (k in map) {
+            println(k.key.toString() + " | " + k.value)
+        }
     }
 }
