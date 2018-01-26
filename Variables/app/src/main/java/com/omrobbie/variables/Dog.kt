@@ -8,11 +8,18 @@ class Dog {
     var name: String = ""
     var color: String = ""
     var weight: Int = 0
+    var gender: String = ""
+    var age: Int = 0
 
     constructor(name: String, color: String, weight: Int) {
         this.name = name
         this.color = color
         this.weight = weight
+    }
+
+    constructor(gender: String, age: Int) {
+        this.gender = gender
+        this.age = age
     }
 
     fun dogPrice(price: String) {

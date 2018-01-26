@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity() {
         var33()
 
         var34()
+        var35()
     }
 
     fun var1() {
@@ -608,5 +609,13 @@ class MainActivity : AppCompatActivity() {
 
         println(dog2.name + ", " + dog2.color + ", " + dog2.weight)
         println(dog2.dogPrice("$4000"))
+    }
+
+    fun var35() {
+        var dog = Dog("Female", 12)
+        var dog2 = Dog("Lucy", "Black", 13)
+
+        println(dog.gender + ", " + dog.age)
+        println(dog2.name + ", " + dog2.color + ", " + dog2.weight)
     }
 }
