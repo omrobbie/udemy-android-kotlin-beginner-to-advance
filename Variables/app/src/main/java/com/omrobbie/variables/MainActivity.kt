@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         var28()
         var29()
         var30()
+        var31()
     }
 
     fun var1() {
@@ -444,6 +445,18 @@ class MainActivity : AppCompatActivity() {
         map.put(3, "C#")
 
         for (items in map) {
+            println(items)
+        }
+    }
+
+    fun var31() {
+//        var listOf = listOf(1, 2, "kotlin", true, 2.34)
+        var listOf = mutableListOf(1, 2, "kotlin", true, 2.34)
+
+        listOf[0] = "Kotlin"
+        listOf[1] = "Java"
+
+        for (items in listOf) {
             println(items)
         }
     }
