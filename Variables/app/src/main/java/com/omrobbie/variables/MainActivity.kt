@@ -661,6 +661,11 @@ class MainActivity : AppCompatActivity() {
         dataModel.addVehicle("Fzr", 2012, "$3000", Company.TOYOTA)
         dataModel.addVehicle("GLI", 2013, "$2000", Company.SUZUKI)
 
+        dataModel.addVehicle("XLi", 2017, "$20000", Company.HONDA)
+        dataModel.addVehicle("Ferrari", 2016, "$30000", Company.SUZUKI)
+
+        dataModel.sellVehicle(1)
+
         dataModel.showAll()
     }
 }
