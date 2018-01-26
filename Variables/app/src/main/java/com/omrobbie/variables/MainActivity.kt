@@ -56,6 +56,8 @@ class MainActivity : AppCompatActivity() {
         println(sum2(12, 13))
 
         var33()
+
+        var34()
     }
 
     fun var1() {
@@ -590,5 +592,17 @@ class MainActivity : AppCompatActivity() {
 
     infix fun Int.prod(num1: Int): Int {
         return this * num1
+    }
+
+
+    fun var34() {
+        var dog = Dog()
+
+        dog.name = "German Shepherd"
+        dog.color = "Black"
+        dog.weight = 7
+
+        println(dog.name + ", " + dog.color + ", " + dog.weight)
+        println(dog.dogPrice("$3000"))
     }
 }
