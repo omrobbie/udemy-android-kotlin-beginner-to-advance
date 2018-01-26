@@ -41,6 +41,11 @@ class MainActivity : AppCompatActivity() {
         var30()
         var31()
         var32()
+
+        simple()
+        simple()
+        simple()
+        simple()
     }
 
     fun var1() {
@@ -470,5 +475,9 @@ class MainActivity : AppCompatActivity() {
         for (items in arrayOf) {
             println(items)
         }
+    }
+
+    fun simple() {
+        println("Hello World!")
     }
 }
