@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity() {
         var36()
         var37()
         var38()
+        var39()
     }
 
     fun var1() {
@@ -652,5 +653,14 @@ class MainActivity : AppCompatActivity() {
 
         player3.killEnemy()
         player3.damage(16)
+    }
+
+    fun var39() {
+        var dataModel = DataModel()
+
+        dataModel.addVehicle("Fzr", 2012, "$3000", Company.TOYOTA)
+        dataModel.addVehicle("GLI", 2013, "$2000", Company.SUZUKI)
+
+        dataModel.showAll()
     }
 }
