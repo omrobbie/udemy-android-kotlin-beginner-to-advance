@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         var34()
         var35()
         var36()
+        var37()
     }
 
     fun var1() {
@@ -633,5 +634,13 @@ class MainActivity : AppCompatActivity() {
         var player2 = Player2("Siddique", 0, 100, "Pistol")
         player2.killEnemy()
         player2.showAll()
+    }
+
+    fun var37() {
+        var player1 = Player1("John", 0, 100, "Axe")
+        var player2 = Player2("Siddique", 0, 100, "Pistol")
+
+        player1.damage(12)
+        player2.damage(12)
     }
 }

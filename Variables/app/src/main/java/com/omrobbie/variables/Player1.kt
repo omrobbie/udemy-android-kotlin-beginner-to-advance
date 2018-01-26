@@ -22,7 +22,7 @@ open class Player1 {
         println("Your score is $score")
     }
 
-    fun damage(damagePoint: Int) {
+    open fun damage(damagePoint: Int) {
         energy = energy - damagePoint
 
         if (energy > 0) {

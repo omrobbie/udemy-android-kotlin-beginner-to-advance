@@ -6,4 +6,8 @@ package com.omrobbie.variables
 
 class Player2(name: String, score: Int, energy: Int, weapon: String)
     : Player1(name, score, energy, weapon) {
+
+    override fun damage(damagePoint: Int) {
+        super.damage(damagePoint / 4)
+    }
 }
