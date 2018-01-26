@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         var38()
         var39()
         var40()
+        var41()
     }
 
     fun var1() {
@@ -676,5 +677,11 @@ class MainActivity : AppCompatActivity() {
         println(overload.sum(12))
         println(overload.sum(12, 13))
         println(overload.sum(12, 13, 14))
+    }
+
+    fun var41() {
+        var car = Car()
+
+        car.name = "public variable"
     }
 }
