@@ -576,6 +576,8 @@ class MainActivity : AppCompatActivity() {
         println("Kotlin".concat(str2, str3))
 
         println(7.sum(12, 13))
+
+        println(7.prod(8))
     }
 
     fun String.concat(str2: String, str3: String): String {
@@ -584,5 +586,9 @@ class MainActivity : AppCompatActivity() {
 
     fun Int.sum(num1: Int, num2: Int): Int {
         return this + num1 + num2
+    }
+
+    infix fun Int.prod(num1: Int): Int {
+        return this * num1
     }
 }
