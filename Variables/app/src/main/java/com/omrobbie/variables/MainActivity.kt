@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         var25()
         var26()
         var27()
+        var28()
     }
 
     fun var1() {
@@ -404,5 +405,22 @@ class MainActivity : AppCompatActivity() {
                 println(array[i][j])
             }
         }
+    }
+
+    fun var28() {
+        var arrayList = ArrayList<String>()
+
+        arrayList.add("Kotlin")
+        arrayList.add("Java")
+        arrayList.add("Python")
+        arrayList.add("C#")
+
+        arrayList.removeAt(2)
+
+        for (items in arrayList) {
+            println(items)
+        }
+
+        println(arrayList.get(1))
     }
 }
