@@ -596,13 +596,17 @@ class MainActivity : AppCompatActivity() {
 
 
     fun var34() {
-        var dog = Dog()
+        var dog = Dog("German Shepherd", "Black", 7)
+        var dog2 = Dog("Lucy", "Brown", 10)
 
-        dog.name = "German Shepherd"
-        dog.color = "Black"
-        dog.weight = 7
+//        dog.name = "German Shepherd"
+//        dog.color = "Black"
+//        dog.weight = 7
 
         println(dog.name + ", " + dog.color + ", " + dog.weight)
         println(dog.dogPrice("$3000"))
+
+        println(dog2.name + ", " + dog2.color + ", " + dog2.weight)
+        println(dog2.dogPrice("$4000"))
     }
 }

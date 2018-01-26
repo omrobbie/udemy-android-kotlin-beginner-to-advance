@@ -9,6 +9,12 @@ class Dog {
     var color: String = ""
     var weight: Int = 0
 
+    constructor(name: String, color: String, weight: Int) {
+        this.name = name
+        this.color = color
+        this.weight = weight
+    }
+
     fun dogPrice(price: String) {
         println("The price of the dog is $price")
     }
