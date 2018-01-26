@@ -50,6 +50,8 @@ class MainActivity : AppCompatActivity() {
         sum(5, 10)
         product(23, 2.34f, 2.65)
         product(12, 23.54f, 23.45)
+
+        println(calculator(1))
     }
 
     fun var1() {
@@ -493,5 +495,57 @@ class MainActivity : AppCompatActivity() {
     fun product(num1: Int, num2: Float, num3: Double) {
         var product = num1 * num2 * num3
         println("The product $product")
+    }
+
+    // 1st example
+    /*fun calculator(option: Int): Int {
+        when (option) {
+            1 -> {
+                return 12 + 13
+            }
+            2 -> {
+                return 12 - 13
+            }
+            3 -> {
+                return 12 / 13
+            }
+            else -> {
+                throw IllegalArgumentException("Enter the right option")
+            }
+        }
+    }*/
+
+    // 2nd example
+    /*fun calculator(option: Int): Int {
+        return when (option) {
+            1 -> {
+                12 + 13
+            }
+            2 -> {
+                12 - 13
+            }
+            3 -> {
+                12 / 13
+            }
+            else -> {
+                throw IllegalArgumentException("Enter the right option")
+            }
+        }
+    }*/
+
+    // 3rd example
+    fun calculator(option: Int) = when (option) {
+        1 -> {
+            12 + 13
+        }
+        2 -> {
+            12 - 13
+        }
+        3 -> {
+            12 / 13
+        }
+        else -> {
+            throw IllegalArgumentException("Enter the right option")
+        }
     }
 }
