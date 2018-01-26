@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
         product(12, 23.54f, 23.45)
 
         println(calculator(1))
+
+        println(sum2(12, 13))
     }
 
     fun var1() {
@@ -548,4 +550,18 @@ class MainActivity : AppCompatActivity() {
             throw IllegalArgumentException("Enter the right option")
         }
     }
+
+    // 1st example
+    /*fun sum2(num1: Int, num2: Int): Int {
+        var sum = num1 + num2
+        return sum
+    }*/
+
+    // 2nd example
+    /*fun sum2(num1: Int, num2: Int): Int {
+        return num1 + num2
+    }*/
+
+    // 3rd example
+    fun sum2(num1: Int, num2: Int) = num1 + num2
 }
