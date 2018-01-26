@@ -46,6 +46,10 @@ class MainActivity : AppCompatActivity() {
         simple()
         simple()
         simple()
+
+        sum(5, 10)
+        product(23, 2.34f, 2.65)
+        product(12, 23.54f, 23.45)
     }
 
     fun var1() {
@@ -479,5 +483,15 @@ class MainActivity : AppCompatActivity() {
 
     fun simple() {
         println("Hello World!")
+    }
+
+    fun sum(num1: Int, num2: Int) {
+        var sum = num1 + num2
+        println("The sum is $sum")
+    }
+
+    fun product(num1: Int, num2: Float, num3: Double) {
+        var product = num1 * num2 * num3
+        println("The product $product")
     }
 }
