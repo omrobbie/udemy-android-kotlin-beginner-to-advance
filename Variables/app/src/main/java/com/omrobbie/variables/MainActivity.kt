@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         var24()
         var25()
         var26()
+        var27()
     }
 
     fun var1() {
@@ -388,6 +389,20 @@ class MainActivity : AppCompatActivity() {
 
         for (items in array) {
             println("Array element $items")
+        }
+    }
+
+    fun var27() {
+        var array = Array(3, { IntArray(3) })
+
+//        array[0][0] = 12
+
+        for (i in 0..2) {
+            for (j in 0..2) {
+                print("Enter a number for row $i and column $j: ")
+                array[i][j] = i + 10
+                println(array[i][j])
+            }
         }
     }
 }
