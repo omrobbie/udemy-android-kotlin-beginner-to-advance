@@ -54,6 +54,8 @@ class MainActivity : AppCompatActivity() {
         println(calculator(1))
 
         println(sum2(12, 13))
+
+        var33()
     }
 
     fun var1() {
@@ -564,4 +566,23 @@ class MainActivity : AppCompatActivity() {
 
     // 3rd example
     fun sum2(num1: Int, num2: Int) = num1 + num2
+
+    fun var33() {
+        var str1 = "How"
+        var str2 = "Are"
+        var str3 = "You"
+
+        println(str1.concat(str2, str3))
+        println("Kotlin".concat(str2, str3))
+
+        println(7.sum(12, 13))
+    }
+
+    fun String.concat(str2: String, str3: String): String {
+        return this + str2 + str3
+    }
+
+    fun Int.sum(num1: Int, num2: Int): Int {
+        return this + num1 + num2
+    }
 }
