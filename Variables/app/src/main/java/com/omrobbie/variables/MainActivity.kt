@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
         var34()
         var35()
+        var36()
     }
 
     fun var1() {
@@ -617,5 +618,20 @@ class MainActivity : AppCompatActivity() {
 
         println(dog.gender + ", " + dog.age)
         println(dog2.name + ", " + dog2.color + ", " + dog2.weight)
+    }
+
+    fun var36() {
+        var player1 = Player1("John", 0, 100, "Axe")
+
+        player1.killEnemy()
+        player1.killEnemy()
+
+        player1.damage(12)
+        player1.showAll()
+
+
+        var player2 = Player2("Siddique", 0, 100, "Pistol")
+        player2.killEnemy()
+        player2.showAll()
     }
 }
