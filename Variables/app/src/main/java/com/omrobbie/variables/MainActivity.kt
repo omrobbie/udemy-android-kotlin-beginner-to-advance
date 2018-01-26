@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         var29()
         var30()
         var31()
+        var32()
     }
 
     fun var1() {
@@ -457,6 +458,16 @@ class MainActivity : AppCompatActivity() {
         listOf[1] = "Java"
 
         for (items in listOf) {
+            println(items)
+        }
+    }
+
+    fun var32() {
+        var arrayOf = arrayOf(1, 3, 4, "kotlin", true, 2.34)
+
+        println(arrayOf.get(3))
+
+        for (items in arrayOf) {
             println(items)
         }
     }
