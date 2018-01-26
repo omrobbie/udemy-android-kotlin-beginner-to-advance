@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         var37()
         var38()
         var39()
+        var40()
     }
 
     fun var1() {
@@ -667,5 +668,13 @@ class MainActivity : AppCompatActivity() {
         dataModel.sellVehicle(1)
 
         dataModel.showAll()
+    }
+
+    fun var40() {
+        var overload = Overload()
+
+        println(overload.sum(12))
+        println(overload.sum(12, 13))
+        println(overload.sum(12, 13, 14))
     }
 }
