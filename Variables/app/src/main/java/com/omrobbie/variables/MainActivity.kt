@@ -66,6 +66,7 @@ class MainActivity : AppCompatActivity() {
         var40()
         var41()
         var42()
+        var43()
     }
 
     fun var1() {
@@ -689,6 +690,12 @@ class MainActivity : AppCompatActivity() {
     fun var42() {
         var info = Info()
         info.getInfo()
+    }
+
+    fun var43() {
+        var s1 = Singleton.single
+        var s2 = Singleton.single
+        var s3 = Singleton.single
     }
 
 }
