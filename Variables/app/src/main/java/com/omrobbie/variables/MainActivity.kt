@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
         var39()
         var40()
         var41()
+        var42()
     }
 
     fun var1() {
@@ -684,4 +685,10 @@ class MainActivity : AppCompatActivity() {
 
         car.name = "public variable"
     }
+
+    fun var42() {
+        var info = Info()
+        info.getInfo()
+    }
+
 }
