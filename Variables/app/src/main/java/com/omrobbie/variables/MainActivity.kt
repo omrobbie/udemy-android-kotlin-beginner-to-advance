@@ -723,13 +723,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun var46() {
-        var num1: Int
+        var num1: Int = 1
+        var num2: Int = 2
 
-        try {
+        var res = try {
             println("Enter num1")
             //num1 = readLine()!!.toInt()
+
+            println("Enter num2")
+            //num2 = readLine()!!.toInt()
+
+            num1 + num2
+
             println("This is after the exception")
-        } catch (e:NumberFormatException) {
+        } catch (e: NumberFormatException) {
             println("There is an exception " + e.message)
         }
     }
