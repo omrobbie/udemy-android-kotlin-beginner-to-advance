@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         var43()
         var44()
         var45()
+        var46()
     }
 
     fun var1() {
@@ -719,6 +720,18 @@ class MainActivity : AppCompatActivity() {
         var student = StudentClass("Learn", 11)
         student.info("omrobbie", 33, 1234)
         student.experience("Programming", 5)
+    }
+
+    fun var46() {
+        var num1: Int
+
+        try {
+            println("Enter num1")
+            //num1 = readLine()!!.toInt()
+            println("This is after the exception")
+        } catch (e:NumberFormatException) {
+            println("There is an exception " + e.message)
+        }
     }
 
 }
