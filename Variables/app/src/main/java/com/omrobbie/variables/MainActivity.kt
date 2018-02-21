@@ -736,7 +736,7 @@ class MainActivity : AppCompatActivity() {
             num1 + num2
 
             println("This is after the exception")
-        } catch (e: NumberFormatException) {
+        } catch (e: Exception) {
             println("There is an exception " + e.message)
         } finally {
             println("I am in finally block")
