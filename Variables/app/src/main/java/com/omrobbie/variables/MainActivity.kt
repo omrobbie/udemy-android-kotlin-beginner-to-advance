@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity() {
         var41()
         var42()
         var43()
+        var44()
     }
 
     fun var1() {
@@ -696,6 +697,17 @@ class MainActivity : AppCompatActivity() {
         var s1 = Singleton.single
         var s2 = Singleton.single
         var s3 = Singleton.single
+    }
+
+    fun var44() {
+        var person = Person()
+
+        var array = Array<Person>(2) { person }
+        array[0] = Teacher()
+        array[1] = Student()
+
+        var res1 = array[0].myInfo("Teacher", 23, "PHD")
+        var res2 = array[1].myInfo("Student", 12, "Matriculation")
     }
 
 }
