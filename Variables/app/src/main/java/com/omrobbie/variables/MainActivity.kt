@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
         var42()
         var43()
         var44()
+        var45()
     }
 
     fun var1() {
@@ -708,6 +709,16 @@ class MainActivity : AppCompatActivity() {
 
         var res1 = array[0].myInfo("Teacher", 23, "PHD")
         var res2 = array[1].myInfo("Student", 12, "Matriculation")
+    }
+
+    fun var45() {
+        var teacher = TeacherClass("Kotlin", 12)
+        teacher.info("Siddique", 23, 123)
+        teacher.experience("Programming", 5)
+
+        var student = StudentClass("Learn", 11)
+        student.info("omrobbie", 33, 1234)
+        student.experience("Programming", 5)
     }
 
 }
