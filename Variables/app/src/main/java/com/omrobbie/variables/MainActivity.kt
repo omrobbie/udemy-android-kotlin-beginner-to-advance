@@ -738,6 +738,8 @@ class MainActivity : AppCompatActivity() {
             println("This is after the exception")
         } catch (e: NumberFormatException) {
             println("There is an exception " + e.message)
+        } finally {
+            println("I am in finally block")
         }
     }
 
